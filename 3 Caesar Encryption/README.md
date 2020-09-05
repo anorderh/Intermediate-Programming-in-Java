@@ -1,0 +1,1 @@
+Given the command-line arguments of a file name, text message, and int representing ENCODE or DECODE, Prompt 3's prompt asked me to write an application that encrypted and decrypted messages with a Caesar cypher. In addition, the prompt also asked for 2 versions of the application: one that handled exceptions within and another that threw to wherever it was called. 
