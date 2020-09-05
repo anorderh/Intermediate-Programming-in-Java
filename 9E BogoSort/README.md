@@ -1,0 +1,1 @@
+For this optional coding assignment, Prompt 9 asked me to implement the sorting algorithm, "BogoSort", and verify its successful execution on a given ArrayList. The sorting algorithm specifically is known to be incredibly inefficient, relying on the continous random swapping of elements until haphazardly stumbling upon a sorted collection. 
