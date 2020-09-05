@@ -1,0 +1,68 @@
+[----------------------------------------------------------------------------------------------------------------------]
+
+[HEADER]
+
+CS-108 Section 3, 4:00 - 5:15
+Student: Anthony Norderhaug | RED ID: 823899304 | Time spent: 12 hours spanning 3 days
+
+[----------------------------------------------------------------------------------------------------------------------]
+
+[DESCRIPTION]
+
+My program acts as a file directory, with various nuances similar to an IPhone's Photos app. It holds two LinkedLists,
+one of them considered the "active directory" and another regarded as the "sorted directory". These LinkedLists hold
+objects Media, derived from an abstract class used in creating the concrete classes of Photo and Video.
+
+When the user "takes a picture" or "records a video", the respective object is created and is added only to the "active
+directory". However, when attempting to delete, display, modify, and/or share this specific media, the search() function
+checks if the "sorted" has been updated to contain all of the active directory's elements. If this is not so, search() is
+impossible and therefore, sort() is implicated.
+
+I attemptED to pursue efficiency BY not sorting every time a new element is added, only when modification and/or data
+extrapolation (from the Media) is desired. My sorting algorithm is a MergeSort and I implemented a binary search.
+
+CODE INDICES that (hopefully) satisfy requirements:
+    NOTE: I do not know if these will become defunct in another IDE.
+
+    1. At least 3 classes
+        A: (4 classes) Photo.java, Video.java, IPhoneDirectory.java, IPhoneDriver.java
+
+    2. At least 1 abstract class
+        A: (1 class) Media.java
+
+    3. At least 1 interface
+        A: (1 interface) Directory.java, implemented by IPhoneDirectory.java
+
+    4. Implement 1 Sorting Algorithm
+        A: IPhoneDirectory.java, lines 121 - 132 & lines 145 - 178
+
+    5. Implement 1 Use of Binary Search (Uses recursion)
+        A: IPhoneDirectory.java, lines 211 - 230
+
+    6. Implement 1 Use of iterator (for-each loop sufficient)
+        A: IPhoneDirectory.java, lines 334 - 344
+
+    7. Implement 1 Use of data structures (Queue, Stack, LinkedList, HashTable)
+        A: IPhoneDirectory.java, lines 17 & 18 & entire java file really
+
+[----------------------------------------------------------------------------------------------------------------------]
+
+[BRIEF SUMMARY]
+
+a. IPhoneDirectory is holding LinkedLists containing Media and allowing modification & pulling data through accessing
+Media objects through LinkedLists.
+b. Media is abstract class that extends concrete classes Video and Photo, establishes members used by both
+c. Photo is concrete class allowing for varying file size calculations, social media responses, print statement, other info
+d. Video is concrete class allowing for varying file size calculations, social media response, print statement, other info
+e. Directory is interface outlining what basic methods IPhoneDirectory will implement to be a directory
+f. IPhoneDriver is a class w/ main method offering GUI for IPhoneDirectory to use as an application
+g. IPhoneDirectoryUnitTests is a class w/ main method offering 5 Unit Tests that test IPhoneDirectory's accuracy
+
+[----------------------------------------------------------------------------------------------------------------------]
+
+[ADDITIONAL IMPORTANT INFORMATION]
+
+- For my Program 8 submission, in addition to the IPhoneDirectoryUnitTests class, there is also a driver class called
+IPhoneDriver.java. This offers a GUI and allows users to interact w/ IPhoneDirectory. It is very applicable for debugging
+and evaluating code.
+
