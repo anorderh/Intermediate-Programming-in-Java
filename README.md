@@ -1,6 +1,6 @@
 # INTRODUCTION
 
-Hi and welcome to my Github collection of "Intermediate Programming in Java" coding assignments! This repository contains all my submitted programs for CS 108 during the Spring 2020 semester. As well as each .java file containing proper documentation, each project folder will contain a README file further explaining its use.
+This repository contains all my submitted programs for CS 108 during the Spring 2020 semester. As well as each .java file containing proper documentation, each project folder will contain a README file further explaining its use.
 
 The following project files demonstrate understanding of the following topics:
 
